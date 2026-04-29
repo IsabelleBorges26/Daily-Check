@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("fundo.jpg"); 
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fcf8e8;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #f9d7e3;
+}
+
+.navbar a {
+    color: #d4a5a5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.caixa-maior {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    border: 3px solid #f9d7e3;
+    text-align: center;
+    color: #7d5a5a;
+    margin-top: 80px;
+}
+
+.input-cidade {
+    border: 2px solid #f9d7e3;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.botao-buscar {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f9d7e3;
+    color: #7d5a5a;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+#lista-tarefas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card-tarefa {
+    background: white;
+    border: 2px solid #f9d7e3;
+    padding: 10px;
+    border-radius: 15px;
+    width: 180px;
+}
+
+.card-tarefa img {
+    width: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily Check - Tarefas</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="temperatura.html">Temperatura</a>
+        <a href="tarefas.html">Tarefas</a>
+    </nav>
+
+    <div class="caixa-maior">
+        <h2>Minhas Tarefas</h2>
+        <button class="botao-buscar" onclick="abrirModal()">+ Adicionar</button>
+    </div>
+
+    <div id="modal-tarefa" class="modal">
+        <div class="caixa-maior">
+            <input class="input-cidade" id="nome" placeholder="Nome">
+            <input class="input-cidade" id="dataComeco" type="date">
+            <input class="input-cidade" id="dataTermino" type="date">
+            <input class="input-cidade" id="descricao" placeholder="Descrição">
+            <input class="input-cidade" id="imagem" placeholder="URL da Imagem">
+            <button class="botao-buscar" onclick="salvarTarefa()">Salvar</button>
+            <button class="botao-buscar" onclick="fecharModal()">Sair</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
